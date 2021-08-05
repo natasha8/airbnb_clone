@@ -10,7 +10,7 @@ const Banner = () => {
 				objectPosition="center"
 				alt="Banner"
 			/>
-			<div className="absolute top-1/2 w-1/2 text-left pl-20">
+			<div className="absolute top-1/3 w-1/2 text-left pl-20">
 				<h2 className="text-2xl text-white font-bold break-words md:text-3xl ">
 					DON'T YOU KNOW
 				</h2>
@@ -18,7 +18,7 @@ const Banner = () => {
 					WHERE TO GO?
 				</h2>
 				<button
-					className="text-purple-500 font-semibold bg-purple-100 rounded-full 
+					className="text-purple-500 font-semibold bg-purple-100 rounded-full ml-1
                 px-10 m-6 py-4 shadow-md hover:shadow-xl 
                 active:scale-90 transition duration-75"
 				>
