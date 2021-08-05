@@ -1,6 +1,9 @@
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const Banner = () => {
+	const router = useRouter();
+
 	return (
 		<div className="relative h-[500px] sm:h-[400px] md:h-[500px] xl:h-[600px] 2xl:h-[700px]">
 			<Image
@@ -21,6 +24,7 @@ const Banner = () => {
 					className="text-purple-500 font-semibold bg-purple-100 rounded-full ml-1
                 px-10 m-6 py-4 shadow-md hover:shadow-xl 
                 active:scale-90 transition duration-75"
+					onClick
 				>
 					Find
 				</button>
