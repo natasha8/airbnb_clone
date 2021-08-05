@@ -10,7 +10,7 @@ const Banner = () => {
 				objectPosition="center"
 				alt="Banner"
 			/>
-			<div className="absolute top-1/3 w-1/2 text-left md:pl-20">
+			<div className="absolute top-1/4 w-1/2 text-left pl-5 shadow-lg rounded md:top/1/3 md:pl-20 md:shadow-none ">
 				<h2 className="text-2xl text-white font-bold break-words md:text-3xl ">
 					DON'T YOU KNOW
 				</h2>
