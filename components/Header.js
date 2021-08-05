@@ -19,7 +19,7 @@ const Header = () => {
 			<div className="flex items-center md:border-2 rounded-full py-2 md: shadow-md">
 				<input
 					type="text"
-					placeholder="Start your search"
+					placeholder="Search"
 					className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-500 placeholder-gray-400"
 				/>
 				<SearchIcon className="hidden md:inline h-8 bg-purple-300 text-white rounded-full p-2  pl-2 cursor-pointer mx-2 " />

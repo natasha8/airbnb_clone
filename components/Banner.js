@@ -11,10 +11,10 @@ const Banner = () => {
 				alt="Banner"
 			/>
 			<div className="absolute top-1/2 w-1/2 text-center">
-				<h2 className="text-3xl text-white font-bold break-words ">
+				<h2 className="text-2xl text-white font-bold break-words md:text-3xl ">
 					DON'T YOU KNOW
 				</h2>
-				<h2 className="text-3xl text-white font-bold break-words ">
+				<h2 className="text-2xl text-white font-bold break-words md:text-3xl ">
 					WHERE TO GO?
 				</h2>
 				<button
@@ -22,7 +22,7 @@ const Banner = () => {
                 px-10 m-6 py-4 shadow-md hover:shadow-xl 
                 active:scale-90 transition duration-75"
 				>
-					Find out now
+					Find
 				</button>
 			</div>
 		</div>
