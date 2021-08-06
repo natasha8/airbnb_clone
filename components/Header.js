@@ -43,6 +43,8 @@ const Header = ({ placeholder }) => {
 	};
 	const resetInput = () => {
 		setSearchInput("");
+		setStartDate(new Date());
+		setEndDate(new Date());
 	};
 
 	return (
