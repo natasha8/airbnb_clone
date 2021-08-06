@@ -38,7 +38,6 @@ const Header = ({ placeholder }) => {
 		key: "selection",
 	};
 	const handleSelect = (ranges) => {
-		console.log(ranges);
 		setStartDate(ranges.selection.startDate);
 		setEndDate(ranges.selection.endDate);
 	};
@@ -47,7 +46,7 @@ const Header = ({ placeholder }) => {
 	};
 
 	return (
-		<header className="sticky top-0 z-50  grid grid-cols-3 bg-pink-50 shadow-md py-5 px-5 md:px-10">
+		<header className="sticky top-0 z-50  grid grid-cols-3 bg-blue-50 shadow-md py-5 px-5 md:px-10">
 			{/*left*/}
 
 			<div
@@ -87,30 +86,32 @@ const Header = ({ placeholder }) => {
 						rangeColors={["#AA50FF"]}
 						onChange={handleSelect}
 						direction="horizontal"
-						className=""
 					/>
-					<div />
-					<div className="flex items-center border-b my-4 ">
+
+					<div className="flex items-center border-b my-4 shadow-sm rounded-sm">
 						<h2 className="text-2xl flex-grow font-semibold">
 							No. of Guest
 						</h2>
-						<UserIcon className="h-5" />
+						<UserIcon className="h-5 pr-3" />
 						<input
 							value={noOfGuest}
 							onChange={(e) => setNoOfGuest(e.target.value)}
 							type="number"
 							min={1}
 							max={16}
-							className="w-16 pl-2 text-lg outline-none text-purple-400"
+							className="w-16 pl-2 text-lg outline-none text-purple-500"
 						/>
 					</div>
 					<div className="flex">
-						<button className="flex-grow text-purple-500">
+						<button
+							onClick={resetInput}
+							className="flex-grow text-purple-500  bg-green-200 rounded-full p-2"
+						>
 							Cancel
 						</button>
 						<button
 							onClick={search}
-							className="flex-grow text-purple-800"
+							className="flex-grow text-purple-800 bg-purple-200 rounded-full"
 						>
 							Search
 						</button>

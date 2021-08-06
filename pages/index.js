@@ -8,7 +8,7 @@ import SmallCard from "../components/SmallCard";
 
 export default function Home({ exploreData, cardData }) {
 	return (
-		<div className="h-full bg-pink-100 ">
+		<div className="h-full bg-blue-50 ">
 			<Head>
 				<title>Airbnb</title>
 				<link rel="icon" href="/favicon.ico" />

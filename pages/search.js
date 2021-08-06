@@ -12,11 +12,15 @@ const Search = ({ searchResults }) => {
 	const range = `${formatStartDate} - ${formatEndDate}`;
 
 	return (
-		<div className="">
-			<Header placeholder={`${location} | ${range} | ${noOfGuest}`} />
+		<div className="bg-blue-50">
+			<Header
+				placeholder={`${location} | ${range} | ${noOfGuest} guests`}
+			/>
 			<main className="flex ">
-				<section className="flex-grow tp-14 px-6">
-					<p className="text-xs">300+ - - for{noOfGuest} Guest</p>
+				<section className="flex-grow pt-14 px-8">
+					<p className="text-xs">
+						300+ stays - {range} - for {noOfGuest} Guest in
+					</p>
 					<h1 className="text-3xl font-semibold mt-2 mb-6">
 						{location}
 					</h1>
@@ -28,18 +32,28 @@ const Search = ({ searchResults }) => {
 						<p className="button">More Filter</p>
 					</div>
 					<div className="flex flex-col">
-						{searchResults.map(({ img, descriptio }) => (
-							<InfoCard
-								key={img}
-								img={img}
-								location={location}
-								description={description}
-								title={title}
-								start={start}
-								price={price}
-								total={total}
-							/>
-						))}
+						{searchResults.map(
+							({
+								img,
+								description,
+								title,
+								start,
+								price,
+								total,
+								location,
+							}) => (
+								<InfoCard
+									key={img}
+									img={img}
+									location={location}
+									description={description}
+									title={title}
+									start={start}
+									price={price}
+									total={total}
+								/>
+							)
+						)}
 					</div>
 				</section>
 			</main>
@@ -52,7 +66,7 @@ export default Search;
 
 export async function getServerSideProps() {
 	const searchResults = await fetch("http://links.papareact.com/isz").then(
-		res.json()
+		(res) => res.json()
 	);
 	return {
 		props: {
