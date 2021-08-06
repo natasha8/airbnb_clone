@@ -24,7 +24,6 @@ const Banner = () => {
 					className="text-purple-500 font-semibold bg-purple-100 rounded-full ml-1
                 px-10 m-6 py-4 shadow-md hover:shadow-xl 
                 active:scale-90 transition duration-75"
-					onClick
 				>
 					Find
 				</button>

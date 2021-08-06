@@ -44,7 +44,7 @@ const Header = ({ placeholder }) => {
 	const resetInput = () => {
 		setSearchInput("");
 		setStartDate(new Date());
-		setEndDate(new Date());
+		setDate(new Date());
 	};
 
 	return (
@@ -68,16 +68,6 @@ const Header = ({ placeholder }) => {
 					className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-500 placeholder-gray-400"
 				/>
 				<SearchIcon className="hidden md:inline h-8 bg-purple-300 text-white rounded-full p-2  pl-2 cursor-pointer mx-2 " />
-			</div>
-
-			{/*right*/}
-			<div className="flex items-center space-x-4 justify-end text-purple-600">
-				<p className="hidden md:inline">Become an Host</p>
-				<GlobeAltIcon className="h-6" />
-				<div className="flex items-center space-x-2 b-2 p-2 rounded-full">
-					<MenuIcon className="h-6" />
-					<UserCircleIcon className="h-6" />
-				</div>
 			</div>
 			{searchInput && (
 				<div className="flex flex-col col-span-3 mx-auto space-x-2">
@@ -120,6 +110,16 @@ const Header = ({ placeholder }) => {
 					</div>
 				</div>
 			)}
+
+			{/*right*/}
+			<div className="flex items-center space-x-4 justify-end text-purple-600">
+				<p className="hidden md:inline">Become an Host</p>
+				<GlobeAltIcon className="h-6" />
+				<div className="flex items-center space-x-2 b-2 p-2 rounded-full">
+					<MenuIcon className="h-6" />
+					<UserCircleIcon className="h-6" />
+				</div>
+			</div>
 		</header>
 	);
 };
