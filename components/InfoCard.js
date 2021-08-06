@@ -3,6 +3,10 @@ import Image from "next/image";
 import { HeartIcon } from "@heroicons/react/outline";
 import { StarIcon } from "@heroicons/react/solid";
 
+const randomRate = (min, max) => {
+	return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
 const InfoCard = ({
 	img,
 	title,
@@ -43,7 +47,8 @@ const InfoCard = ({
 				<div className="flex justify-between items-end" pt-5>
 					<p className="flex items-center">
 						<StarIcon className="h-5 text-yellow-500" />
-						{star} 4.5
+						{star}
+						{randomRate}
 					</p>
 					<div>
 						<p className="text-lg lg:text-2xl font-semibold pb-2">

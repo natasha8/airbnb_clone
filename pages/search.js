@@ -37,7 +37,7 @@ const Search = ({ searchResults }) => {
 								img,
 								description,
 								title,
-								start,
+								star,
 								price,
 								total,
 								location,
@@ -48,7 +48,7 @@ const Search = ({ searchResults }) => {
 									location={location}
 									description={description}
 									title={title}
-									start={start}
+									star={star}
 									price={price}
 									total={total}
 								/>
